@@ -1,0 +1,22 @@
+﻿<Window x:Class="FinalProject.Favorites"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="Favorites" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock  FontSize="23" HorizontalAlignment="Center" Height="30" Grid.Row="1" Text="Choose an athlete" Margin="305,18,305.333,97.333"  />
+        <TextBlock  FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Text="Favorite Athletes"/>
+        <Button Content="Main Menu" Height="40" Width="100" Grid.Row="2" />
+
+        <ComboBox x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" />
+    </Grid>
+</Window>

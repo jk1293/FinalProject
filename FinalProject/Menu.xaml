@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="n1" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Width="400" Height="80" Grid.ColumnSpan="3" Grid.Column="0"/>
+        <TextBlock x:Name="n2" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Width="400" Grid.ColumnSpan="3" Grid.Column="0" Height="80" Margin="38,0.333,38,79.667" Grid.RowSpan="2"/>
+        <TextBlock x:Name="n3" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Width="400" Height="80" Grid.ColumnSpan="3" Grid.Column="0"/>
+        <TextBlock x:Name="n4" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Width="400" Height="80" Grid.ColumnSpan="3" Grid.Column="0"/>
+
+        <Button Grid.Row="1" Height="40" Grid.ColumnSpan="2" Grid.Column="3" VerticalAlignment="Center" Content="Standings" Width="150"  x:Name="Standings" />
+        <Button Grid.Row="2" Height="40" Grid.ColumnSpan="2" Grid.Column="3" VerticalAlignment="Center" Content="Events" Width="150"  x:Name="Events" />
+        <Button Grid.Row="3" Height="40" Grid.ColumnSpan="2" Grid.Column="3" VerticalAlignment="Center" Content="Athletes" Width="150"  x:Name="Athletes" />
+        <Button Grid.Row="4" Height="40" Grid.ColumnSpan="2" Grid.Column="3" VerticalAlignment="Center" Content="Favorite Athletes" Width="150"  x:Name="Favorites" />
+
     </Grid>
 </Window>
