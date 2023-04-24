@@ -24,5 +24,18 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        private void Signup_Click(object sender, RoutedEventArgs e)
+        {
+            Signup signup = new Signup();
+            signup.Show();
+            this.Close();
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }

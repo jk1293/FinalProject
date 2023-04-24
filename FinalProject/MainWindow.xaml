@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Alpine Skiing World Cup Results" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="23"/>
+        <Button Content="Sign Up" x:Name="Signup" Grid.Row="2" Height="40" Width="320" Click="Signup_Click" VerticalAlignment="Center" HorizontalAlignment="Center"  />
+        <Button Content="Log In" x:Name="Login" Grid.Row="3" Height="40" Width="320" Click="Login_Click" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
     </Grid>
 </Window>
