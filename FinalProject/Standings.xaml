@@ -15,7 +15,7 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <ComboBox Text="" x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" />
+        <ComboBox Text="" x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" SelectionChanged="Combobox_SelectionChanged" />
         <DataGrid Width="600" x:Name="data" Grid.Row="2" Grid.RowSpan="2" />
         <TextBlock Text="Rankings" Height="40" VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="24" />
         <Button Content="Main Menu" Grid.Row="4" Height="20" Width="100" />

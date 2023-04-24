@@ -37,7 +37,7 @@ namespace FinalProject
                 {
                     sqlcon.Open();
 
-                    string query = "INSERT INTO Sign_Up(Username,Email,Password)values ('" + this.Username.Text + "','" + this.Email.Text + "','" + this.Password.Password + "') ";
+                    string query = "INSERT INTO Sign_Up(Username,Email,Password) values ('" + this.Username.Text + "','" + this.Email.Text + "','" + this.Password.Password + "') ";
 
                     SqlCommand cmd = new SqlCommand(query, sqlcon);
                     cmd.ExecuteNonQuery();

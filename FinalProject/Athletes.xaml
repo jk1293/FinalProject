@@ -22,10 +22,10 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock x:Name="name" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" />
-        <TextBlock Text="Shirt Number" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="1" Grid.Column="0" />
+        <TextBlock Text="Age" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="1" Grid.Column="0" />
         <TextBlock  Text="Nationality" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="1" Grid.Column="0" />
-        <TextBlock  Text="Goals" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="1" Grid.Column="0" />
-        <TextBlock  Text= "Assists" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="1" Grid.Column="0" />
+        <TextBlock  Text="Wins" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="1" Grid.Column="0" />
+        <TextBlock  Text= "Podiums" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="1" Grid.Column="0" />
 
 
         <TextBlock x:Name="ShirtNumber" Grid.Row="1" Grid.Column="1" Width="300" Height="30"  />
