@@ -54,6 +54,7 @@ namespace FinalProject
                 {
                     Menu m = new Menu();
                     m.Show();
+                    m.Username1.Text = Username.Text;
                     this.Close();
                 }
                 else

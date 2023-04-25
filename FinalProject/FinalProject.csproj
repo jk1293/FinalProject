@@ -78,6 +78,9 @@
     <Compile Include="AthletesSearch.xaml.cs">
       <DependentUpon>AthletesSearch.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Eventinfo.xaml.cs">
+      <DependentUpon>Eventinfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Events.xaml.cs">
       <DependentUpon>Events.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AthletesSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Eventinfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

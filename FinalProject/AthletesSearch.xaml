@@ -17,7 +17,10 @@
 
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="2" x:Name="text" TextAlignment="Center" Height="30" Width="500" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="Username3" Grid.Row="0" Height="20" HorizontalAlignment="Center" Width=" 70" Margin="713,10,10.333,100" />
         <TextBox x:Name="athlete" VerticalContentAlignment="Center" Grid.Row="3" Height="30" Width="300"  />
         <Button x:Name="Submit" Grid.Row="4" Height="40" Width="150" Content="Submit" Click="Submit_Click"/>
+        <Button x:Name="Goback" Grid.Row="5" Height="40" Width="150" Content="Main Menu" Click="Goback_Click"/>
+
     </Grid>
 </Window>

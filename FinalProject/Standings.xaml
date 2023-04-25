@@ -15,10 +15,24 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <ComboBox Text="" x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" SelectionChanged="Combobox_SelectionChanged" />
-        <DataGrid Width="600" x:Name="data" Grid.Row="2" Grid.RowSpan="2" />
-        <TextBlock Text="Rankings" Height="40" VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="24" />
-        <Button Content="Main Menu" Grid.Row="4" Height="20" Width="100" />
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <ComboBox Text="" x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="Combobox_SelectionChanged" >
+            <ComboBoxItem Content="Men Overall"/>
+            <ComboBoxItem Content="Women Overall"/>
+
+        </ComboBox>
+        <DataGrid Grid.ColumnSpan="2" Width="600" x:Name="data" Grid.Row="2" Grid.RowSpan="2" />
+        <TextBlock Grid.ColumnSpan="2" Text="Rankings" Height="40" VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="24" />
+        <TextBlock x:Name="UsernamR" Grid.Row="0" Height="20" HorizontalAlignment="Center" Width=" 70" Margin="713,10,10.333,100" />
+        <Button Content="Main Menu" Grid.Row="4" Height="20" Width="100" Click="Button_Click" />
+        <Button Content="Refresh" Grid.Column="1" Grid.Row="4" Height="20" Width="100" Click="Refresh_Click" />
+
 
     </Grid>
 </Window>

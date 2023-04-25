@@ -15,7 +15,9 @@
 
         <TextBlock  FontSize="23" HorizontalAlignment="Center" Height="30" Grid.Row="1" Text="Choose an athlete" Margin="305,18,305.333,97.333"  />
         <TextBlock  FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Text="Favorite Athletes"/>
-        <Button Content="Main Menu" Height="40" Width="100" Grid.Row="2" />
+        <TextBlock x:Name="Username2" Grid.Row="0" Height="20" HorizontalAlignment="Center" Width=" 70" Margin="713,10,10.333,100" />
+
+        <Button Content="Main Menu" Height="40" Width="100" Grid.Row="2" Click="Button_Click" />
 
         <ComboBox x:Name="Combobox" Height="40" Width="300"  Grid.Row="1" />
     </Grid>

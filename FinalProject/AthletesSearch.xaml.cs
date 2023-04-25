@@ -58,7 +58,7 @@ namespace FinalProject
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\FinalProject\FinalProject\nnnnn.mdf;Integrated Security=True");
-            Athletes p = new Athletes();
+                            Athletes p = new Athletes();
             try
             {
 
@@ -67,14 +67,16 @@ namespace FinalProject
                 SqlCommand cmd = new SqlCommand(query, sqlcon);
                 cmd.ExecuteNonQuery();
                 SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read(); p.Show();
+                reader.Read(); 
 
                 p.Age.Text = reader["Age"].ToString();
                 p.Nationality.Text = reader["Nationality"].ToString();
                 p.Wins.Text = reader["Wins"].ToString();
                 p.Podiums.Text = reader["Podiums"].ToString();
 
-                p.name.Text = athlete.Text;
+                p.name.Text = reader["Name"].ToString();
+                p.UsernameS.Text = Username3.Text;
+p.Show();
             }
             catch (Exception ex)
             {
@@ -83,6 +85,12 @@ namespace FinalProject
             }
             finally { sqlcon.Close(); }
 
+            this.Close();
+        }
+        private void Goback_Click(object sender, RoutedEventArgs e) {
+            Menu m = new Menu();
+            m.Username1.Text = Username3.Text;
+            m.Show();
             this.Close();
         }
     }
