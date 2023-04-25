@@ -1,3 +1,6 @@
-﻿create table Sign_Up(Username varchar(max), Email varchar(max), [Password] varchar(max))
+﻿create table Athletes(Age int, Nationality varchar(max), Wins int, Podiums int)
+alter table Athletes
+add [Name] varchar(max)
 
-insert into Sign_Up(Username, Email, [Password]) values ('Julian', 'j.kolev23@acsbg.org', '12345678')
+insert into Athletes(Age, Nationality, Wins, Podiums, [Name]) values(25, 'USA', 87, 135, 'Mikaela Shiffrin')
+insert into Athletes(Age, Nationality, Wins, Podiums, [Name]) values(29, 'France', 35, 112, 'Alexis Pinturault')

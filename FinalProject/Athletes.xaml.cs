@@ -26,7 +26,9 @@ namespace FinalProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Menu m = new Menu();
+            m.Show();
+            this.Close();
         }
     }
 }

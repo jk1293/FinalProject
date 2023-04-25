@@ -24,7 +24,38 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        //private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        //{
+        //    SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\FinalProject\FinalProject\nnnnn.mdf;Integrated Security=True");
+        //    Athletes p = new Athletes();
+        //    try
+        //    {
+
+        //        sqlcon.Open();
+        //        string query = $"Select * from Athletes where Name = '" + athlete.Text +"'";
+        //        SqlCommand cmd = new SqlCommand(query, sqlcon);
+        //        cmd.ExecuteNonQuery();
+        //        SqlDataReader reader = cmd.ExecuteReader();
+        //        reader.Read(); p.Show();
+
+        //        p.Age.Text = reader["Age"].ToString();
+        //        p.Nationality.Text = reader["Nationality"].ToString();
+        //        p.Wins.Text = reader["Wins"].ToString();
+        //        p.Podiums.Text = reader["Podiums"].ToString();
+
+        //        p.name.Text = athlete.Text;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //        MessageBox.Show("Check if you entered correctly the name");
+        //    }
+        //    finally { sqlcon.Close(); }
+
+        //    this.Close();
+        //}
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\FinalProject\FinalProject\nnnnn.mdf;Integrated Security=True");
             Athletes p = new Athletes();
@@ -32,23 +63,23 @@ namespace FinalProject
             {
 
                 sqlcon.Open();
-                string query = $"Select * from Athletes where Name = '" + athlete.Text +"'";
+                string query = $"Select * from Athletes where Name = '" + athlete.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlcon);
                 cmd.ExecuteNonQuery();
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read(); p.Show();
 
-                p.ShirtNumber.Text = reader["ShirtNumber"].ToString();
+                p.Age.Text = reader["Age"].ToString();
                 p.Nationality.Text = reader["Nationality"].ToString();
-                p.Goals.Text = reader["Goals"].ToString();
-                p.Assists.Text = reader["Assists"].ToString();
+                p.Wins.Text = reader["Wins"].ToString();
+                p.Podiums.Text = reader["Podiums"].ToString();
 
-                p.name.Text = team1.Text;
+                p.name.Text = athlete.Text;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                MessageBox.Show("Check if you entered correctly only the last name");
+                MessageBox.Show("Check if you entered correctly the name");
             }
             finally { sqlcon.Close(); }
 
