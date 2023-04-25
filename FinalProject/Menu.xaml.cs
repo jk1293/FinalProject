@@ -125,7 +125,7 @@ namespace FinalProject
                 while (myreader.Read())
                 {
 
-                    string sname = myreader.GetString(2);
+                    string sname = myreader.GetString(1);
                     f.Combobox.Items.Add(sname);
                 }
 

@@ -1,0 +1,1 @@
+﻿select * from Favorites_ where Username = 'julian'
