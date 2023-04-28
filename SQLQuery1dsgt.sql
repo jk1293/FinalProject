@@ -1,0 +1,1 @@
+﻿insert into Athletes([Name], Age, Nationality, Wins, Podiums) values('Marco Odermatt', 26, 'Switzerland', 25, 65)

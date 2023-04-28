@@ -39,10 +39,11 @@ namespace FinalProject
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\FinalProject\FinalProject\nnnnn.mdf;Integrated Security=True"); // needs a path
 
             sqlcon.Open();
-            string query = "SELECT COUNT(1) FROM Favourites Where Athletename=@Athletename";
+            string query = "SELECT COUNT(1) FROM Favourites Where Username=@Username and Athletename=@Athletename";
             SqlCommand sqlCmd = new SqlCommand(query, sqlcon);
             sqlCmd.CommandType = CommandType.Text;
             sqlCmd.Parameters.AddWithValue("@Athletename", name.Text);
+            sqlCmd.Parameters.AddWithValue("@Username", UsernameS.Text);
 
             int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
             if (count == 1)
